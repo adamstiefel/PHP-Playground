@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            function checkForm() {
+                var name = document.querySelector("#name").value;
+                var lang = document.querySelector("#lang").value;
+                var output = document.querySelector("#output");
+                if (lang == "C" || lang == "C++" || lang == "Java") {
+                    output.innerHTML = "Your interview is on thursday at 9:00 AM";
+                    document.querySelector("#name").value = "";
+                    document.querySelector("#lang").value = "";
+                    
+                } else {
+                    
+                    output.innerHTML = "Your interview is on friday at 9:00 AM";
+                    document.querySelector("#name").value = "";
+                    document.querySelector("#lang").value = "";
+                }
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <form id="myForm">
+            <input id="name" type="text" name="name" placeholder="Name">
+            <input id="lang" type="text" name="favProgramming Lang" placeholder="Favorite Programming Language">
+            <input type="button" value="Submit" onclick="checkForm()">
+        </form>
+        <div id="output">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/Applications/MAMP/htdocs/adamgit.io/css/mystyle.css">
+        <style>
+            body {
+                background-color: 
+            linen;
+                margin-left: 30px;
+            }
+            h1 {
+                color: maroon;
+                
+            } 
+            .center, form {
+                text-align: center;
+            }
+            .smImg {
+                width: 100px;
+                height: 100px;
+                
+            }
+
+            a.links {
+                text-decoration: none;
+                margin-left: 20%;
+                color: wheat;
+                padding: 10px;
+                background-color: rgb(80, 25, 182);
+                font-size: 20px;
+            }
+            a.links:hover {
+                color: rgba(0, 0, 255, 0.61);
+                background-color: cornsilk;
+            }
+            .sub-head {
+                padding-bottom: 10px;
+                display: inline-block;
+                text-align: start;
+                
+            }
+            #navMenu {
+                padding: 10px;
+                padding-top: 50px;
+                padding-bottom: 25px;
+                margin-bottom: 5%;
+            }
+            .mdImg {
+                width: 200px;
+                height: 200px;
+                padding-left: 15%;
+                
+            }
+            .sub-head-container {
+                text-align: center;
+                margin-bottom: 5%;
+            }
+
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                margin-bottom: 5%;
+            }
+
+            .spaceLeft {
+                padding-left: 15%;
+            }
+
+            dl {
+                padding-left: 25px;
+            }
+            .content-2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+            }
+            .table {
+                margin-right: 15%;
+                height: 200px;
+                width: 300px;
+            }
+            
+            form {
+                padding-top: 5%;
+                padding-bottom: 5%;
+                padding-left: 5%;
+            }
+            .tdecor {
+                text-decoration: none;
+                color: rgb(80, 25, 182);
+            }
+
+            li, dd {
+                margin-top: 15px;
+            }
+
+            td {
+                padding-left: 15px;
+            }
+
+            .form-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .links{
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+
+            .listy {
+                border-left: 6px solid rgb(80, 25, 182);
+                background-color: lightgrey;
+                padding-left: 10px;
+            }
+
+            #header {
+                margin-bottom: 5%;
+            }
+            
+            #hello {
+                color: rgba(0, 0, 255, 0.61);
+                background-color: cornsilk;
+                border-radius: 10px;
+                margin-left: 5px;
+            }
+            #hello:hover {
+                color: wheat;
+                background-color: rgb(80, 25, 182);
+
+            }
+
+            .smbtn {
+                color: rgba(0, 0, 255, 0.61);
+                background-color: cornsilk;
+                border-radius: 10px;
+            }
+
+            .smbtn:hover {
+                color: wheat;
+                background-color: rgb(80, 25, 182);
+            }
+
+           .btnListContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+
+            .btnList {
+                margin-right: 25%;
+            }
+
+            .btListOutput {
+                margin-right: 2.5%;
+            }
+
+            .formOutputContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                border: rgb(64, 18, 192) solid 1px;
+                border-radius: 10px;
+                padding: 50px;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+
+            #displayOutput {
+                margin-right: 25%;
+            }
+
+            #h1Color {
+                text-align: center;
+                margin-top: 5%;
+            }
+
+            #colorBtnContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                
+                
+            }
+
+            #blue, #red {
+                margin-right: 5%;
+            }
+
+            #colorfullContainer {
+                border: rgb(64, 18, 192) solid 1px;
+                border-radius: 10px;
+                padding: 50px;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+
+            #changeImgContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+
+            #selectImg {
+                margin-right: 5%;
+            }
+
+            #tasksContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5%;
+            }
+
+            #taskListContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                border: rgb(64, 18, 192) solid 1px;
+                border-radius: 10px;
+                padding: 50px;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+
+            
+            </style>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script type="text/javascript" rel="script" src="index.js" defer></script>
+        <title>Git.io</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="header" class="center" style="color: rgb(80, 25, 182);">Git.io</h1>
+            <div class="sub-head-container">
+                <div class="sub-head">
+                    <p class="listy">
+                        The <em>page</em> of the <strong>Git.io</strong> project.
+                    </p>
+                    <p class="listy">
+                        We provide a <i>service</i> for the <b>Git</b> version control system.
+                    </p>
+                    <p class="listy">
+                        We are <mark>open source</mark> and <small>free</small> to use.
+                    </p>
+                    <p class="listy"> 
+                        We are <ins>not</ins> <del>broken</del>
+                    </p>
+                    <p class="listy">
+                        We are <sub>subtitled</sub> and <sup>superscripted</sup>
+                        <p ><a class="tdecor" href="https://www.w3.org/" target="_blank">WW3 </a>The span is what it is <span style="color: blue;">blue</span> color
+                            <button id="hello" onclick="hello()">Click me</button>
+                        </p>
+                        
+                    </p>
+                    
+    
+                </div>
+                <img class="mdImg" src="images/header.png" alt="Header" />
+            </div>
+            
+
+            <div id="navMenu" >
+                <a class="links" href="index.php">PHP</a>
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="login1.php">Login</a>
+             </div>
+             
+             <div class="card">
+                <img class="smImg" src="images/c3IrOeU - Imgur.jpg" alt="Funny Meme" />
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+                <img class="smImg spaceLeft" src="images/c3IrOeU - Imgur.jpg" alt="Funny Meme" />
+
+                <ol>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
+                
+             </div>
+            
+
+            <div class="content-2">
+                <table class="table" border="1">
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                </table>
+            
+
+                <iframe src="https://www.youtube.com/embed/HCDVN7DCzYE" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            
+        </div>
+        <div class="form-content">
+            
+
+            <form>
+                <label for="username">Name</label>
+                <p><input id="Username" type="text" name="name" placeholder="Name" /></p>
+                <label for="email">Email</label>
+                <p><input id="email" type="text" name="email" placeholder="Email" /></p>
+                <label for="Favcolors">Favorite Color</label>
+                <p>
+                    <input type="radio" name="Favcolors" value="blue" checked/> Blue<br>
+                    <input type="radio" name="Favcolors" value="red" /> Red<br>
+                    <input type="radio" name="Favcolors" value="green" /> Green<br>
+    
+                </p>
+                <p>
+                    <input type="checkbox" name="terms" value="agree" /> I agree to the terms and conditions<br>
+                </p>
+                <input  class="smbtn" type="submit" value="Submit" onclick=" return displayOutput()"  />
+            </form>
+
+            <img class="smImg spaceLeft" src="images/c3IrOeU - Imgur.jpg" alt="Funny Meme" />
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- a hot beverage</dd>
+                      
+            </dl>
+
+        </div>
+        <div class="formOutputContainer">
+            <p id="displayOutput">Hello... </p>
+            <p id="displayOutput2">Email: </p>
+
+           
+            </div>
+        <div class="btnListContainer">
+            <p class="btListOutput" id="count">0</p>
+            <button class="smbtn btnList" onclick="count()">Click me</button>
+
+            <p class="btListOutput" id="hello2">Hello!</p>
+            <button class="smbtn" onclick="hello2()">Click me</button>
+        </div>
+        <div id="colorfullContainer">
+            <h1 id="h1Color">ColorFULL</h1>
+            <div id="colorBtnContainer">
+                <button id="blue" class="smbtn" onclick="changeColor()">Blue</button>
+                <button id="red" class="smbtn" onclick="changeColor2()">Red</button>
+                <button id="black" class="smbtn" onclick="changeColor3()">Black</button>
+            </div>
+        </div>
+        <div id="changeImgContainer">
+            <img id="selectImg" class="smImg" src="images/c3IrOeU - Imgur.jpg" alt="Funny Meme" />
+            <button class="smbtn" onclick="img2()">Click me</button>
+            
+        </div>
+
+        <div id="tasksContainer">
+            <h1 id="tasks">Tasks</h1>
+            
+            <form id="taskForm">
+                <input id="taskInput" type="text" name="task" placeholder="Task" />
+                <button class="smbtn" onclick=" return addTask()">Add Task</button>
+            </form>
+
+        </div>
+        <div id="taskListContainer">
+            <ul id="taskList">
+            </ul>
+        </div>
+        
+
+    </body>
+</html>

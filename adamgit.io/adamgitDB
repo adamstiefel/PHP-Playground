@@ -1,0 +1,16 @@
+USE adamgitDB;
+
+
+CREATE TABLE IF NOT EXISTS users (
+USER_ID  decimal(4,0) NOT NULL PRIMARY KEY,
+First_NAME varchar(30) DEFAULT NULL,
+Last_NAME varchar(30) DEFAULT NULL,
+Email varchar(30) DEFAULT NULL,
+Password varchar(30) DEFAULT NULL
+);
+)ENGINE=InnoDB
+
+desc users;
+
+INSERT INTO users(USER_ID,First_NAME,Last_NAME,Email,Password)
+VALUES(1,'John','Smith','i@gmail.com','123');
